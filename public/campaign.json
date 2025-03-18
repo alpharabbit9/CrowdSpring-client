@@ -1,0 +1,93 @@
+[
+    {
+      "image": "https://i.ibb.co.com/Rk6gjY69/solar-power-4843112-1920.jpg",
+      "title": "Innovative Solar Power Bank",
+      "type": "startup",
+      "description": "A portable solar power bank designed for outdoor enthusiasts and emergency situations.",
+      "minimum_donation": 10,
+      "deadline": "2025-06-30",
+      "user_email": "john.doe@example.com",
+      "user_name": "John Doe"
+    },
+    {
+      "image": "https://i.ibb.co.com/jvHTwF7r/istockphoto-1437830105-612x612.jpg",
+      "title": "Medical Help for Sarah",
+      "type": "personal issue",
+      "description": "Raising funds for Sarah’s medical treatment and hospital bills.",
+      "minimum_donation": 5,
+      "deadline": "2025-05-15",
+      "user_email": "sarah.jones@example.com",
+      "user_name": "Sarah Jones"
+    },
+    {
+      "image": "https://i.ibb.co.com/d4h5w72P/Coffee.jpg",
+      "title": "Organic Coffee Startup",
+      "type": "business",
+      "description": "Launching an organic coffee brand that supports sustainable farming.",
+      "minimum_donation": 15,
+      "deadline": "2025-07-10",
+      "user_email": "mark.smith@example.com",
+      "user_name": "Mark Smith"
+    },
+    {
+      "image": "https://i.ibb.co.com/bMhV1QZk/Aspects-of-Film-Production.jpg",
+      "title": "Short Film Production",
+      "type": "creative ideas",
+      "description": "Funding a short film that highlights environmental issues and solutions.",
+      "minimum_donation": 20,
+      "deadline": "2025-08-01",
+      "user_email": "anna.lee@example.com",
+      "user_name": "Anna Lee"
+    },
+    {
+      "image": "https://i.ibb.co.com/C5CwzHMg/Scholarship-for-Underprivileged-Kids.jpg",
+      "title": "Scholarship for Underprivileged Kids",
+      "type": "personal issue",
+      "description": "Providing scholarships for children in rural areas to access quality education.",
+      "minimum_donation": 8,
+      "deadline": "2025-09-15",
+      "user_email": "michael.brown@example.com",
+      "user_name": "Michael Brown"
+    },
+    {
+      "image": "https://i.ibb.co.com/B26h9CgH/ai.jpg",
+      "title": "AI-Powered Language Learning App",
+      "type": "startup",
+      "description": "Developing an AI-driven mobile app that helps users learn new languages interactively.",
+      "minimum_donation": 25,
+      "deadline": "2025-10-05",
+      "user_email": "sophia.white@example.com",
+      "user_name": "Sophia White"
+    },
+    {
+      "image": "https://i.ibb.co.com/BvSc21j/indie.webp",
+      "title": "Support a New Indie Music Album",
+      "type": "creative ideas",
+      "description": "Funding the production of an independent artist’s debut album.",
+      "minimum_donation": 12,
+      "deadline": "2025-11-20",
+      "user_email": "james.miller@example.com",
+      "user_name": "James Miller"
+    },
+    {
+      "image": "https://i.ibb.co.com/S4qg6gps/vegan-res.jpg",
+      "title": "Opening a Vegan Restaurant",
+      "type": "business",
+      "description": "A vegan restaurant that serves sustainable and delicious plant-based meals.",
+      "minimum_donation": 30,
+      "deadline": "2025-12-10",
+      "user_email": "emma.johnson@example.com",
+      "user_name": "Emma Johnson"
+    },
+    {
+      "image": "https://i.ibb.co.com/4Z7v98Np/water.webp",
+      "title": "Smart Water Purifier for Remote Villages",
+      "type": "startup",
+      "description": "Building an affordable and portable water purifier for clean drinking water in remote areas.",
+      "minimum_donation": 18,
+      "deadline": "2026-01-05",
+      "user_email": "liam.wilson@example.com",
+      "user_name": "Liam Wilson"
+    }
+  ]
+  
