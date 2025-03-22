@@ -23,7 +23,7 @@ const Navbar = () => {
         <NavLink to={'/allCampaign'}><li><a>All Campaign</a></li></NavLink>
         <NavLink to={'/addNew'}><li><a>Add New Campaign</a></li></NavLink>
         <NavLink to={'/myCampaign'}><li><a>My Campaign</a></li></NavLink>
-        <NavLink to={'/'}><li><a>My Donation</a></li></NavLink>
+        <NavLink to={'/myDonation'}><li><a>My Donation</a></li></NavLink>
         {/* <NavLink to={'/about'}><li><a>About</a></li></NavLink>
         <NavLink to={'/contact'}><li><a>Contact</a></li></NavLink> */}
 
@@ -44,7 +44,9 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl font-bold  "> <img src={logo} alt="" />Crowdspring</a>
+               <Link to={'/'}>
+               <a className="btn btn-ghost text-xl font-bold  "> <img src={logo} alt="" />Crowdspring</a>
+               </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

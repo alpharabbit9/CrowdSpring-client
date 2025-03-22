@@ -29,7 +29,7 @@ const CampaignDetails = () => {
         }
 
 
-        fetch('http://localhost:5000/donationAmount',{
+        fetch('https://crowd-funding-server-beryl.vercel.app/donationAmount',{
             method:'POST',
             headers:{
                 'content-type': 'application/json'

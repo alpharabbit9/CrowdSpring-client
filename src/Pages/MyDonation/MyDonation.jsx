@@ -3,14 +3,14 @@ import CampaignBanner from '../All Campaign/Campaign Banner/CampaignBanner';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { FaEdit, FaTrashAlt } from 'react-icons/fa';
 
-const MyCampaign = () => {
+const MyDonation = () => {
 
     const [campaigns, setCampaigns] = useState([]);
     const { user } = useContext(AuthContext)
 
     useEffect(() => {
 
-        fetch(`https://crowd-funding-server-beryl.vercel.app/myCampaign?email=${user?.email}`)
+        fetch(`https://crowd-funding-server-beryl.vercel.app/myDonation?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setCampaigns(data))
     }, [user?.email])
@@ -20,7 +20,7 @@ const MyCampaign = () => {
         <div>
             <CampaignBanner></CampaignBanner>
             <div className='text-center bg-[#F4EFE7] p-8'>
-                <h2 className="font-bold text-4xl mb-3">MyCampaign</h2>
+                <h2 className="font-bold text-4xl mb-3">MyDonation</h2>
                 <p>Empowering Dreams, One Contribution at a Time</p>
                 <div>
                     {
@@ -34,7 +34,7 @@ const MyCampaign = () => {
                                             <th>
                                                #
                                             </th>
-                                            <th>Title</th>
+                                            <th>Name</th>
                                             <th>Description</th>
                                             <th>Deadline</th>
                                             <th>Action</th>
@@ -85,4 +85,4 @@ const MyCampaign = () => {
     );
 };
 
-export default MyCampaign;
+export default MyDonation;

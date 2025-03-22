@@ -11,7 +11,7 @@ const AllCampaign = () => {
 
     useEffect(() => {
 
-        fetch('http://localhost:5000/campaigns')
+        fetch('https://crowd-funding-server-beryl.vercel.app/campaigns')
             .then(res => res.json())
             .then(data => setCampaigns(data))
 

@@ -36,7 +36,7 @@ const AddNewCampaign = () => {
             name
         } ;
 
-        fetch('http://localhost:5000/campaigns',{
+        fetch('https://crowd-funding-server-beryl.vercel.app/campaigns',{
             method:'POST',
             headers:{
                 'content-type': 'application/json'
