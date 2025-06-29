@@ -34,22 +34,6 @@
 
 ---
 
-## 📁 Folder Structure
-
-```
-
-crowdspring/
-│
-├── public/
-│   └── campaigns.json         # Campaign data
-│
-├── src/
-│   ├── components/            # Reusable components (Navbar, Footer, CampaignCard, etc.)
-│   ├── pages/                 # Page components (Home, CampaignDetails, About, etc.)
-│   ├── App.jsx                # Main app with routing
-│   └── index.js               # Entry point
-│
-└── README.md
 
 ````
 
