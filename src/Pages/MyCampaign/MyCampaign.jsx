@@ -1,19 +1,31 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext,  useEffect,  useState } from 'react';
 import CampaignBanner from '../All Campaign/Campaign Banner/CampaignBanner';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { FaEdit, FaTrashAlt } from 'react-icons/fa';
+import axios from 'axios';
 
 const MyCampaign = () => {
 
     const [campaigns, setCampaigns] = useState([]);
-    const { user } = useContext(AuthContext)
+    const { user } = useContext(AuthContext);
 
     useEffect(() => {
 
-        fetch(`https://crowd-funding-server-beryl.vercel.app/myCampaign?email=${user?.email}`)
-            .then(res => res.json())
-            .then(data => setCampaigns(data))
+        // fetch(`https://crowd-funding-server-beryl.vercel.app/myCampaign?email=${user?.email}`)
+        //     .then(res => res.json())
+        //     .then(data => setCampaigns(data))
+
+        axios.get(`http://localhost:5000/myCampaign?email=${user?.email}`, {
+            withCredentials: true
+        })
+        .then(res => {
+            console.log(res.data);
+            setCampaigns(res.data);
+        });
     }, [user?.email])
+
+    
+    
 
 
     return (

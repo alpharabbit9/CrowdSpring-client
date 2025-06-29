@@ -1,9 +1,10 @@
 
-import { Link, useNavigate } from 'react-router-dom';
+import { data, Link, useNavigate } from 'react-router-dom';
 import './Login.css'
 import { FaGoogle } from 'react-icons/fa';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { useContext } from 'react';
+import axios from 'axios';
 const Login = () => {
 
     const {UserLogIn,setUser , createGoogleUser} = useContext(AuthContext);
@@ -42,8 +43,15 @@ const Login = () => {
 
         UserLogIn(email,password)
         .then(result => {
-            // console.log(result.user);
+            console.log("Logged in User :",result.user.email);
             setUser(result.user);
+
+            const user = {email : email};
+
+            axios.post('http://localhost:5000/jwt',user ,{withCredentials:true})
+            .then(res =>{
+                console.log(res.data);
+            })
             navigate("/")
 
         })

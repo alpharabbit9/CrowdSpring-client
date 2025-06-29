@@ -31,7 +31,8 @@ const Router = createBrowserRouter([
             },
             {
                 path: 'allCampaign',
-                element: <AllCampaign></AllCampaign>
+                element: <AllCampaign></AllCampaign>,
+                loader : () => fetch('http://localhost:5000/campaignCount')
             },
             {
                 path: 'allCampaign/:id',
